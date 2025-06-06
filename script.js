@@ -1,6 +1,6 @@
 // Dynamically load images from 'port' folder (img1.jpg to img77.jpg)
 const gallery = document.getElementById('gallery');
-const totalImages = 77;
+const totalImages = 56;
 
 for(let i = 1; i <= totalImages; i++) {
   const img = document.createElement('img');
