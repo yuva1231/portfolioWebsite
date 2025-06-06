@@ -14,7 +14,7 @@
   }
   
   header {
-    background: #b3e5cc; /* soft mint */
+    background: #b3e5cc;
     color: #2b2b2b;
     padding: 1rem 2rem;
     position: sticky;
@@ -42,36 +42,72 @@
   }
   
   nav a:hover {
-    color: #ff9776; /* peachy */
+    color: #ff9776;
   }
   
   .section {
-    padding: 3rem 2rem;
-    max-width: 1000px;
+    padding: 2.5rem 2rem;
+    max-width: 1100px;
     margin: auto;
   }
   
-  .center {
+  /* Section Headers (Centered) */
+  .center h2,
+  .section h2 {
     text-align: center;
-  }
-  
-  h2 {
-    margin-bottom: 1.2rem;
+    margin-bottom: 0.8rem;
     font-weight: 700;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #2b2b2b;
   }
   
+  /* Base Paragraph Style */
   p {
     font-size: 1.1rem;
-    max-width: 700px;
-    margin: 1rem auto;
     color: #444;
+    line-height: 1.8;
   }
   
+  /* About Paragraph */
+  #about p {
+    text-align: left;
+    max-width: 800px;
+    margin: 1.2rem auto 0;
+    padding: 0 0.5rem;
+  }
+  
+  /* Intro / Home Section */
+  #home {
+    padding: 4rem 2rem 2rem;
+  }
+  
+  #home h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: #2e2e2e;
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  /* Contact Info Section */
+  #contact p {
+    text-align: center;
+    margin: 0.6rem auto;
+    font-size: 1.05rem;
+    max-width: 600px;
+    padding: 0 0.5rem;
+  }
+  
+  #contact a {
+    font-weight: bold;
+  }
+  
+  /* Gallery */
   .gallery {
     column-count: 1;
     column-gap: 1rem;
+    margin-top: 1.5rem;
   }
   
   @media(min-width: 600px) {
@@ -102,6 +138,7 @@
     box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
   }
   
+  /* Links */
   a {
     color: #4da99c;
     text-decoration: underline;
@@ -111,23 +148,21 @@
     color: #ff9776;
   }
   
-  /* Contact Info Section */
-  #contact p {
-    margin: 0.5rem auto;
-    font-size: 1.1rem;
-    max-width: 500px;
-    text-align: center;
-  }
-  
-  #contact a {
-    font-weight: bold;
-  }
-  
-  /* Optional: Mobile responsive tweaks */
+  /* Mobile Responsiveness */
   @media(max-width: 500px) {
-    #contact p {
+    #contact p,
+    #about p {
       font-size: 1rem;
+      padding: 0 1.2rem;
+    }
+  
+    #home h2 {
+      font-size: 2rem;
       padding: 0 1rem;
+    }
+  
+    .section h2 {
+      font-size: 1.8rem;
     }
   }
   
